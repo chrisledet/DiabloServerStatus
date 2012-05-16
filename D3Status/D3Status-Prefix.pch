@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'D3Status' target in the 'D3Status' project
+//
+
+#ifdef __OBJC__
+    #import <Cocoa/Cocoa.h>
+#endif
