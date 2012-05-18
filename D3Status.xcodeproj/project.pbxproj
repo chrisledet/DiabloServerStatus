@@ -17,6 +17,17 @@
 		839952E41563748700B785A7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 839952C41563748700B785A7 /* Cocoa.framework */; };
 		839952EC1563748700B785A7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 839952EA1563748700B785A7 /* InfoPlist.strings */; };
 		839952EF1563748700B785A7 /* D3StatusTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 839952EE1563748700B785A7 /* D3StatusTests.m */; };
+		839952FD1563753200B785A7 /* down.png in Resources */ = {isa = PBXBuildFile; fileRef = 839952FB1563753200B785A7 /* down.png */; };
+		839952FE1563753200B785A7 /* up.png in Resources */ = {isa = PBXBuildFile; fileRef = 839952FC1563753200B785A7 /* up.png */; };
+		839953041563767000B785A7 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953011563767000B785A7 /* HTMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		839953051563767000B785A7 /* HTMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953011563767000B785A7 /* HTMLNode.m */; };
+		839953061563767000B785A7 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953031563767000B785A7 /* HTMLParser.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		839953071563767000B785A7 /* HTMLParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953031563767000B785A7 /* HTMLParser.m */; };
+		8399530A1563777600B785A7 /* D3StatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953091563777600B785A7 /* D3StatusParser.m */; };
+		8399530B1563777600B785A7 /* D3StatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953091563777600B785A7 /* D3StatusParser.m */; };
+		839953121563789F00B785A7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 839953101563786900B785A7 /* libxml2.dylib */; };
+		8399531515637A6D00B785A7 /* D3StatusCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8399531415637A6D00B785A7 /* D3StatusCheck.m */; };
+		8399531615637A6D00B785A7 /* D3StatusCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8399531415637A6D00B785A7 /* D3StatusCheck.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +46,31 @@
 		839952C71563748700B785A7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		839952C81563748700B785A7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		839952C91563748700B785A7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		839952CC1563748700B785A7 /* D3Status-Info.plist */ = {isa = PBXFileReference; path = "D3Status-Info.plist"; sourceTree = "<group>"; };
+		839952CC1563748700B785A7 /* D3Status-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "D3Status-Info.plist"; sourceTree = "<group>"; };
 		839952CE1563748700B785A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		839952D01563748700B785A7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		839952D21563748700B785A7 /* D3Status-Prefix.pch */ = {isa = PBXFileReference; path = "D3Status-Prefix.pch"; sourceTree = "<group>"; };
+		839952D21563748700B785A7 /* D3Status-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "D3Status-Prefix.pch"; sourceTree = "<group>"; };
 		839952D41563748700B785A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
-		839952D61563748700B785A7 /* AppDelegate.h */ = {isa = PBXFileReference; path = AppDelegate.h; sourceTree = "<group>"; };
+		839952D61563748700B785A7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		839952D71563748700B785A7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		839952DA1563748700B785A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		839952E11563748700B785A7 /* D3StatusTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = D3StatusTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		839952E21563748700B785A7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		839952E91563748700B785A7 /* D3StatusTests-Info.plist */ = {isa = PBXFileReference; path = "D3StatusTests-Info.plist"; sourceTree = "<group>"; };
+		839952E91563748700B785A7 /* D3StatusTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "D3StatusTests-Info.plist"; sourceTree = "<group>"; };
 		839952EB1563748700B785A7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		839952ED1563748700B785A7 /* D3StatusTests.h */ = {isa = PBXFileReference; path = D3StatusTests.h; sourceTree = "<group>"; };
+		839952ED1563748700B785A7 /* D3StatusTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = D3StatusTests.h; sourceTree = "<group>"; };
 		839952EE1563748700B785A7 /* D3StatusTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = D3StatusTests.m; sourceTree = "<group>"; };
+		839952FB1563753200B785A7 /* down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = down.png; sourceTree = "<group>"; };
+		839952FC1563753200B785A7 /* up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = up.png; sourceTree = "<group>"; };
+		839953001563767000B785A7 /* HTMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLNode.h; sourceTree = "<group>"; };
+		839953011563767000B785A7 /* HTMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLNode.m; sourceTree = "<group>"; };
+		839953021563767000B785A7 /* HTMLParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTMLParser.h; sourceTree = "<group>"; };
+		839953031563767000B785A7 /* HTMLParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTMLParser.m; sourceTree = "<group>"; };
+		839953081563777600B785A7 /* D3StatusParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D3StatusParser.h; sourceTree = "<group>"; };
+		839953091563777600B785A7 /* D3StatusParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D3StatusParser.m; sourceTree = "<group>"; };
+		839953101563786900B785A7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		8399531315637A6D00B785A7 /* D3StatusCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D3StatusCheck.h; sourceTree = "<group>"; };
+		8399531415637A6D00B785A7 /* D3StatusCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D3StatusCheck.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				839953121563789F00B785A7 /* libxml2.dylib in Frameworks */,
 				839952C51563748700B785A7 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -75,10 +98,12 @@
 		839952B51563748700B785A7 = {
 			isa = PBXGroup;
 			children = (
+				839952F81563750600B785A7 /* Classes */,
 				839952CA1563748700B785A7 /* D3Status */,
 				839952E71563748700B785A7 /* D3StatusTests */,
 				839952C31563748700B785A7 /* Frameworks */,
 				839952C11563748700B785A7 /* Products */,
+				839952F91563750B00B785A7 /* Vendor */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +119,7 @@
 		839952C31563748700B785A7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				839953101563786900B785A7 /* libxml2.dylib */,
 				839952C41563748700B785A7 /* Cocoa.framework */,
 				839952E21563748700B785A7 /* SenTestingKit.framework */,
 				839952C61563748700B785A7 /* Other Frameworks */,
@@ -125,6 +151,7 @@
 		839952CB1563748700B785A7 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				839952FA1563753200B785A7 /* Images */,
 				839952CC1563748700B785A7 /* D3Status-Info.plist */,
 				839952CD1563748700B785A7 /* InfoPlist.strings */,
 				839952D01563748700B785A7 /* main.m */,
@@ -151,6 +178,45 @@
 				839952EA1563748700B785A7 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		839952F81563750600B785A7 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				839953081563777600B785A7 /* D3StatusParser.h */,
+				839953091563777600B785A7 /* D3StatusParser.m */,
+				8399531315637A6D00B785A7 /* D3StatusCheck.h */,
+				8399531415637A6D00B785A7 /* D3StatusCheck.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		839952F91563750B00B785A7 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				839952FF1563767000B785A7 /* Objective-C-HTML-Parser */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		839952FA1563753200B785A7 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				839952FB1563753200B785A7 /* down.png */,
+				839952FC1563753200B785A7 /* up.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		839952FF1563767000B785A7 /* Objective-C-HTML-Parser */ = {
+			isa = PBXGroup;
+			children = (
+				839953001563767000B785A7 /* HTMLNode.h */,
+				839953011563767000B785A7 /* HTMLNode.m */,
+				839953021563767000B785A7 /* HTMLParser.h */,
+				839953031563767000B785A7 /* HTMLParser.m */,
+			);
+			path = "Objective-C-HTML-Parser";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -227,6 +293,8 @@
 				839952CF1563748700B785A7 /* InfoPlist.strings in Resources */,
 				839952D51563748700B785A7 /* Credits.rtf in Resources */,
 				839952DB1563748700B785A7 /* MainMenu.xib in Resources */,
+				839952FD1563753200B785A7 /* down.png in Resources */,
+				839952FE1563753200B785A7 /* up.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,6 +331,10 @@
 			files = (
 				839952D11563748700B785A7 /* main.m in Sources */,
 				839952D81563748700B785A7 /* AppDelegate.m in Sources */,
+				839953041563767000B785A7 /* HTMLNode.m in Sources */,
+				839953061563767000B785A7 /* HTMLParser.m in Sources */,
+				8399530A1563777600B785A7 /* D3StatusParser.m in Sources */,
+				8399531515637A6D00B785A7 /* D3StatusCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +343,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				839952EF1563748700B785A7 /* D3StatusTests.m in Sources */,
+				839953051563767000B785A7 /* HTMLNode.m in Sources */,
+				839953071563767000B785A7 /* HTMLParser.m in Sources */,
+				8399530B1563777600B785A7 /* D3StatusParser.m in Sources */,
+				8399531615637A6D00B785A7 /* D3StatusCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +417,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = $SDK_DIR/usr/include/libxml2;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
@@ -362,6 +439,8 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"HEADER_SEARCH_PATHS[arch=*]" = $SDK_DIR/usr/include/libxml2;
+				IBC_PLUGIN_SEARCH_PATHS = $SDK_DIR/usr/include/libxml2;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
 			};
@@ -436,6 +515,7 @@
 				839952F41563748700B785A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		839952F51563748700B785A7 /* Build configuration list for PBXNativeTarget "D3StatusTests" */ = {
 			isa = XCConfigurationList;
@@ -444,6 +524,7 @@
 				839952F71563748700B785A7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
