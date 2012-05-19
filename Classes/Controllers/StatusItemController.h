@@ -12,4 +12,6 @@
     NSStatusItem *statusItem;
 }
 
+-(IBAction)quitApp;
+
 @end

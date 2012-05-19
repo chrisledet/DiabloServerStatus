@@ -15,9 +15,15 @@
 @interface StatusItemController()
 -(void)assignImageToStatusBar;
 -(NSString*)fetchAppropriateImageName;
+-(void)setUpMenu;
 @end
 
 @implementation StatusItemController
+
+-(IBAction)quitApp
+{
+    [[NSApplication sharedApplication] terminate:nil];
+}
 
 -(void)awakeFromNib
 {
@@ -26,6 +32,8 @@
     }
 
     [self assignImageToStatusBar];
+
+    [self setUpMenu];
 
     dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0);
     dispatch_async(queue, ^{
@@ -56,6 +64,15 @@
     }
 
     return STATUS_DOWN_IMAGE_NAME;
+}
+
+-(void)setUpMenu
+{
+    NSMenu *statusBarMenu = [[NSMenu alloc] initWithTitle:@"Diablo 3 Status"];
+    NSMenuItem *quitMenuitem = [[NSMenuItem alloc] initWithTitle:@"Quit D3Status" action:@selector(quitApp) keyEquivalent:@""];
+    [quitMenuitem setTarget:self];
+    [statusBarMenu addItem:quitMenuitem];
+    statusItem.menu = statusBarMenu;
 }
 
 @end
