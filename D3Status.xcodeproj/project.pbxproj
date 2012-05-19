@@ -26,8 +26,7 @@
 		8399530A1563777600B785A7 /* D3StatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953091563777600B785A7 /* D3StatusParser.m */; };
 		8399530B1563777600B785A7 /* D3StatusParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 839953091563777600B785A7 /* D3StatusParser.m */; };
 		839953121563789F00B785A7 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 839953101563786900B785A7 /* libxml2.dylib */; };
-		8399531515637A6D00B785A7 /* D3StatusCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8399531415637A6D00B785A7 /* D3StatusCheck.m */; };
-		8399531615637A6D00B785A7 /* D3StatusCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 8399531415637A6D00B785A7 /* D3StatusCheck.m */; };
+		83CF395915674912001C006C /* StatusItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 83CF395815674912001C006C /* StatusItemController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,8 +68,8 @@
 		839953081563777600B785A7 /* D3StatusParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D3StatusParser.h; sourceTree = "<group>"; };
 		839953091563777600B785A7 /* D3StatusParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D3StatusParser.m; sourceTree = "<group>"; };
 		839953101563786900B785A7 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
-		8399531315637A6D00B785A7 /* D3StatusCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = D3StatusCheck.h; sourceTree = "<group>"; };
-		8399531415637A6D00B785A7 /* D3StatusCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = D3StatusCheck.m; sourceTree = "<group>"; };
+		83CF395715674912001C006C /* StatusItemController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StatusItemController.h; path = Controllers/StatusItemController.h; sourceTree = "<group>"; };
+		83CF395815674912001C006C /* StatusItemController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = StatusItemController.m; path = Controllers/StatusItemController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,10 +182,9 @@
 		839952F81563750600B785A7 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				83CF395615674838001C006C /* Controllers */,
 				839953081563777600B785A7 /* D3StatusParser.h */,
 				839953091563777600B785A7 /* D3StatusParser.m */,
-				8399531315637A6D00B785A7 /* D3StatusCheck.h */,
-				8399531415637A6D00B785A7 /* D3StatusCheck.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -217,6 +215,15 @@
 				839953031563767000B785A7 /* HTMLParser.m */,
 			);
 			path = "Objective-C-HTML-Parser";
+			sourceTree = "<group>";
+		};
+		83CF395615674838001C006C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				83CF395715674912001C006C /* StatusItemController.h */,
+				83CF395815674912001C006C /* StatusItemController.m */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -334,7 +341,7 @@
 				839953041563767000B785A7 /* HTMLNode.m in Sources */,
 				839953061563767000B785A7 /* HTMLParser.m in Sources */,
 				8399530A1563777600B785A7 /* D3StatusParser.m in Sources */,
-				8399531515637A6D00B785A7 /* D3StatusCheck.m in Sources */,
+				83CF395915674912001C006C /* StatusItemController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,7 +353,6 @@
 				839953051563767000B785A7 /* HTMLNode.m in Sources */,
 				839953071563767000B785A7 /* HTMLParser.m in Sources */,
 				8399530B1563777600B785A7 /* D3StatusParser.m in Sources */,
-				8399531615637A6D00B785A7 /* D3StatusCheck.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
